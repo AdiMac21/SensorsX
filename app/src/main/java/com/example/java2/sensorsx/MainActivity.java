@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
 //        sensorAccelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 //        sensorManager.registerListener(this, sensorAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
-        Sensor sensorProxymity=sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        Sensor sensorLight=sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
-        sensorManager.registerListener(this,sensorProxymity,SensorManager.SENSOR_DELAY_NORMAL);
+        sensorManager.registerListener(this,sensorLight,SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     @Override
